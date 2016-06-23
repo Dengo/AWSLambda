@@ -1,10 +1,10 @@
 # Lambda-CloudWatch-PagerDuty
-Amazon Lambda to receive alerts from CloudWatch and send it to PagerDuty Generic API.
+Amazon AWS Lambda to receive alerts from CloudWatch and send it to PagerDuty Generic API.
 
 PagerDuty already has integration with AWS CloudWatch, please refer to this guide for more information:
 https://www.pagerduty.com/docs/guides/aws-cloudwatch-integration-guide/
 
-But if you want to customize the notification message you receive from PageDuty you need to do manual integration using Lambda function.
+But if you want to customize the notification message you receive from PageDuty you need to do a manual integration using Lambda function.
 
 ## Getting Started
 The Events API can be used with any "Generic API" integration in PagerDuty. If you don't already have a service with a "Generic API" integration, you should create one by following the steps in "Creating a Generic API Integration" guide: https://support.pagerduty.com/hc/en-us/articles/202830340-Creating-a-Generic-API-Integration
