@@ -20,7 +20,12 @@ exports.handler = function(event, context) {
 
 	var s1 = subject.split(' ');
 	var s2 = s1[1].split('awsroute53');
-	var description = s2[0]+" is not responding";
+	var description = s2[0];
+	
+	if (subject.match('ALARM'))
+	    description +=" is not responding";
+	else if (subject.match('OK'))
+	    description +=" is up now";
 
 	var payloadStr = JSON.stringify({
 			"service_key": service_key,
